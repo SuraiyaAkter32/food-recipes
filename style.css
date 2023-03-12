@@ -1,25 +1,66 @@
-.header-title{
+
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Open+Sans:wght@400;700;800&family=Roboto&display=swap');
+
+
+/* google font root */
+:root{
+    --roboto:  'Roboto', sans-serif;
+    --comic: 'Comic Neue', cursive;
+}
+
+
+/* navbar section with font size hover */
+.header-container{
     position: relative;
-    background-color: blue;
-    padding: 30px;
+    background-color: rgb(82, 82, 182);
+    padding: 10px;
     color: white;   
     left: 2px;
 }
 
+.header-title:hover {
+
+    font-size: 30px
+}
+
+
+
+
+/* font style */
+.header-title{
+    font-family: var(--roboto);
+}
+.food-title{
+    font-family: var(--roboto);
+}
+
+.description{
+    font-family: var(--comic);
+}
+
+
+
+
+
+/* head section with background image */
 
 .head-container{
  
     position: relative;
     text-align: center;
     color: white;
-    
-
 }
 
 .background-img{
     width: 100%;
     height: 600px;
-}
+    opacity: 0.5;
+      
+    }
+
+.background-img:hover {
+        opacity: 1.0;
+      }
 
 .head-description{
     position: absolute;
@@ -29,14 +70,35 @@
 }
 
 
-/* .head-container{
-    position: relative;
-    background-image: url(/images/food.jpg);
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 1200px;
-    color: red;
-    text-align: center;
+
+
+
+
+/* food item section using flex */
+
+.food-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+.food{
+   background: gray;
+   width: 150px;
+   height: 200px;
+   margin-bottom: 20px;
+   padding: 30px;
+   border-radius: 10px;
+   text-align: center;
+   color: white;
+}
+
+.food:hover{
+    background: pink;
   
- 
-}  */
+}
+.img-rounded{
+    height: 110px;
+    width: 150px;
+    border-radius: 50%;
+}
